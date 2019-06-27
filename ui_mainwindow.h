@@ -27,6 +27,7 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QGridLayout *gridLayout_2;
+    QLineEdit *lineEdit_2;
     QLineEdit *lineEdit;
     QGridLayout *gridLayout;
     QPushButton *pushButtonClear;
@@ -54,19 +55,26 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(356, 359);
-        MainWindow->setMinimumSize(QSize(356, 359));
-        MainWindow->setMaximumSize(QSize(356, 359));
+        MainWindow->resize(338, 424);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout_2 = new QGridLayout(centralWidget);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        lineEdit_2 = new QLineEdit(centralWidget);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setMinimumSize(QSize(0, 50));
+        lineEdit_2->setSizeIncrement(QSize(0, 50));
+        lineEdit_2->setBaseSize(QSize(0, 50));
+        lineEdit_2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_2->setReadOnly(true);
+
+        gridLayout_2->addWidget(lineEdit_2, 0, 0, 1, 1);
+
         lineEdit = new QLineEdit(centralWidget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
         lineEdit->setMinimumSize(QSize(0, 100));
-        lineEdit->setSizeIncrement(QSize(0, 100));
         QFont font;
         font.setPointSize(28);
         font.setBold(true);
@@ -75,7 +83,7 @@ public:
         lineEdit->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit->setReadOnly(true);
 
-        gridLayout_2->addWidget(lineEdit, 0, 0, 1, 1);
+        gridLayout_2->addWidget(lineEdit, 1, 0, 1, 1);
 
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
@@ -188,12 +196,12 @@ public:
         gridLayout->addWidget(pushButtonIgual, 4, 0, 1, 4);
 
 
-        gridLayout_2->addLayout(gridLayout, 1, 0, 1, 1);
+        gridLayout_2->addLayout(gridLayout, 2, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 356, 21));
+        menuBar->setGeometry(QRect(0, 0, 338, 21));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -222,11 +230,11 @@ public:
         pushButton4->setText(QApplication::translate("MainWindow", "4", nullptr));
         pushButton3->setText(QApplication::translate("MainWindow", "3", nullptr));
         pushButton2->setText(QApplication::translate("MainWindow", "2", nullptr));
-        pushButtonVezes->setText(QApplication::translate("MainWindow", "X", nullptr));
+        pushButtonVezes->setText(QApplication::translate("MainWindow", "x", nullptr));
         pushButton1->setText(QApplication::translate("MainWindow", "1", nullptr));
         pushButton0->setText(QApplication::translate("MainWindow", "0", nullptr));
         pushButtonPoint->setText(QApplication::translate("MainWindow", ".", nullptr));
-        pushButtonDividir->setText(QApplication::translate("MainWindow", "/", nullptr));
+        pushButtonDividir->setText(QApplication::translate("MainWindow", "\303\267", nullptr));
         pushButtonIgual->setText(QApplication::translate("MainWindow", "=", nullptr));
     } // retranslateUi
 
