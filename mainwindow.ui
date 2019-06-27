@@ -6,21 +6,9 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>356</width>
-    <height>359</height>
+    <width>338</width>
+    <height>424</height>
    </rect>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>356</width>
-    <height>359</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>356</width>
-    <height>359</height>
-   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -28,14 +16,30 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="lineEdit_2">
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>100</height>
+        <height>50</height>
        </size>
       </property>
       <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="minimumSize">
        <size>
         <width>0</width>
         <height>100</height>
@@ -59,7 +63,7 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
+    <item row="2" column="0">
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
        <widget class="QPushButton" name="pushButtonClear">
@@ -325,7 +329,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>356</width>
+     <width>338</width>
      <height>21</height>
     </rect>
    </property>
