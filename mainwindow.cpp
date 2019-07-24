@@ -217,6 +217,3 @@ double MainWindow::multiplicacao(double A, double B) {
 	return C;
 }
 
-//void MainWindow::slotOperacaoWindow() {
-//	
-//}
